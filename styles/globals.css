@@ -1,0 +1,47 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+
+.btn {
+  @apply inline-block px-5 py-3 rounded-lg uppercase tracking-wider font-semibold text-sm;
+}
+
+.btn:focus {
+  @apply outline-none;
+}
+
+.btn-indigo {
+  @apply bg-indigo-500 text-white;
+}
+
+.btn-indigo:hover {
+  @apply bg-indigo-400;
+}
+
+.btn-indigo:active {
+  @apply bg-indigo-600;
+}
+
+.btn-gray {
+  @apply bg-gray-500 text-gray-900;
+}
+
+.btn-gray:hover {
+  @apply bg-gray-300;
+}
+
+.btn-gray:active {
+  @apply bg-gray-500;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */

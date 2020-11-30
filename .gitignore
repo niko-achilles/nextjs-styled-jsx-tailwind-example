@@ -32,3 +32,8 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+/postcss-for-ssr
+/postcss-with-plugins
+/nextdocument
+/styles/build/
