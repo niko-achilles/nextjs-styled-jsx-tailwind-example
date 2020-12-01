@@ -7,6 +7,7 @@ export const olympians = [
     imageAlt: "Zeus the god of heavens",
     capability:
       "Olympian of the sky, lightning, thunder, law, order and justice",
+    rating: 5,
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ export const olympians = [
     symbol: "Owl, olive tree",
     capability: "Olympian of wisdom, handicraft and warfare",
     imageAlt: "Athena, God of wisdom, handicraft and warfare",
+    rating: 4,
   },
   {
     id: 3,
@@ -25,5 +27,6 @@ export const olympians = [
       "Olympian of the seas, water, storms, hurricanes, earthquakes and horses",
     imageAlt:
       "Poseidon, God of seas, water, storms, hurricanes, earthquakes and horses",
+    rating: 2,
   },
 ];
