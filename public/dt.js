@@ -22,7 +22,7 @@
         var Ya =
           ((Pa = {}),
           (Pa.cfg =
-            "app=81992a422cc37f76|cors=1|rcdec=1209600000|featureHash=A2SVfqru|vcv=2|reportUrl=https://bf77680jwl.bf.dynatrace.com/bf|rdnt=1|uxrgce=1|srcss=1|bp=3|srmcrv=10|cuc=g78nuzlr|mel=100000|dpvc=1|ssv=4|lastModification=1620820099384|dtVersion=10215210506134511|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|featureHash=A2SVfqru|agentUri=https://js-cdn.dynatrace.com/jstag/148709fdc4b/ruxitagent_A2SVfqru_10215210506134511.js|auto=|domain=|rid=RID_|rpid=|app=81992a422cc37f76"),
+            "app=81992a422cc37f76|cors=1|rcdec=1209600000|featureHash=A27SVfqrux|vcv=2|reportUrl=https://bf77680jwl.bf.dynatrace.com/bf|rdnt=1|uxrgce=1|srcss=1|bp=3|srmcrv=10|cuc=g78nuzlr|chw=https://pxotpqva5a.execute-api.eu-west-1.amazonaws.com|mel=100000|dpvc=1|ssv=4|lastModification=1620823911952|dtVersion=10215210506134511|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|featureHash=A27SVfqrux|async=1|agentUri=https://js-cdn.dynatrace.com/jstag/148709fdc4b/ruxitagent_A27SVfqrux_10215210506134511.js|auto=|domain=|rid=RID_|rpid=|app=81992a422cc37f76"),
           (Pa.iCE = qb),
           Pa);
         window.dT_ = Ya;
