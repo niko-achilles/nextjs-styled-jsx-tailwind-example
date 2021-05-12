@@ -1,1 +1,1 @@
-Next js with style-jsx ssr, tailwind , styled-jsx-plugin-postcss
+Next js with tailwind, mdx remote, aws amplify libraries,
