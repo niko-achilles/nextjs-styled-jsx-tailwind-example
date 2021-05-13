@@ -1,12 +1,14 @@
 import Link from "next/link";
 import format from "comma-number";
-import { API } from "aws-amplify";
+import { API, Auth } from "aws-amplify";
 import { useEffect, useState } from "react";
 
 const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
   const [views, setViews] = useState();
 
+
   useEffect(() => {
+
     fetchViews();
   }, []);
 
@@ -16,6 +18,7 @@ const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
         headers: { "x-api-key": process.env.NEXT_PUBLIC_X_API_KEY },
       });
       setViews(views);
+  
     } catch (error) {
       console.log(error);
     }

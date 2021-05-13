@@ -14,8 +14,9 @@ export default function ViewCounter({ slug }) {
     try {
       const { views } = await API.post("views", `/dev/views?storyId=${slug}`, {
         headers: { "x-api-key": process.env.NEXT_PUBLIC_X_API_KEY },
+        body: {},
       });
-      console.log(views);
+   
       setViews(views);
     } catch (error) {
       console.log(error);
