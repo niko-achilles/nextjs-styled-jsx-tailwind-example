@@ -1,6 +1,8 @@
 import Link from "next/link";
 import test from "./Test";
 import { Counter } from "./Counter";
+import { Wrapper } from "./Wrapper";
+import { Step } from "./Step";
 
 const CustomLink = (props) => {
   const href = props.href;
@@ -21,6 +23,8 @@ const Components = {
   a: CustomLink,
   test,
   Counter,
+  Step,
+  Wrapper,
 };
 
 export default Components;

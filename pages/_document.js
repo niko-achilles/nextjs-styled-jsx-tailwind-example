@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <script src="/dt.js"></script>
         </Head>
-        <body className="bg-white text-white">
+        <body className="bg-white text-black">
           <Main />
           <NextScript />
         </body>
