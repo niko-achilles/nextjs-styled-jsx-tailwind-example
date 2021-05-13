@@ -34,7 +34,7 @@ class MyDocument extends Document {
             content="/favicons/browserconfig.xml"
             name="msapplication-config"
           />
-          <script src="/dt.js"></script>
+          {/* <script src="/dt.js"></script> */}
         </Head>
         <body className="bg-white text-black">
           <Main />
