@@ -15,6 +15,13 @@ export default function Home({ stories }) {
 
   return (
     <div>
+      <Head>
+        <title>Stories - Niko Achilles Kokkinos</title>
+        <meta
+          content="Playground of stories and serverless technologies"
+          name="description"
+        />
+      </Head>
       <div className="bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5">
         <div className="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
           <div className="xl:max-w-xl">
