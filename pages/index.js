@@ -1,6 +1,7 @@
 import OlympianCard from "../components/OlympianCard";
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Home({ stories }) {
   const [searchValue, setSearchValue] = useState("");
