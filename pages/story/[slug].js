@@ -6,13 +6,6 @@ import { MDXRemote } from "next-mdx-remote";
 import StoryLayout from "../../layouts/StoryLayout";
 
 export default function StoryPage({ mdxSource, frontMatter }) {
-  if (frontMatter.title === "example") {
-    return (
-      <StoryLayout frontMatter={frontMatter}>
-        <MDXRemote {...mdxSource} />
-      </StoryLayout>
-    );
-  }
   return (
     <StoryLayout frontMatter={frontMatter}>
       <MDXRemote {...mdxSource} />
