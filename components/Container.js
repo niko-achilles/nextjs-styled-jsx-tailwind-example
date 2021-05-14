@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NextLink from "next/link";
+import Footer from "./Footer";
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -32,6 +33,7 @@ export default function Container(props) {
 
       <main className="flex flex-col justify-center bg-white px-8">
         {children}
+        <Footer />
       </main>
     </div>
   );

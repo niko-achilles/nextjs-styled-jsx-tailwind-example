@@ -2,6 +2,7 @@ import StoryCard from "../components/StoryCard";
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import { useState } from "react";
 import Head from "next/head";
+import Footer from "../components/Footer";
 
 export default function Home({ stories }) {
   const [searchValue, setSearchValue] = useState("");
@@ -120,6 +121,7 @@ export default function Home({ stories }) {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
