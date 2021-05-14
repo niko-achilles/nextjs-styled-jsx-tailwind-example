@@ -1,4 +1,4 @@
-import OlympianCard from "../components/OlympianCard";
+import StoryCard from "../components/StoryCard";
 import { getAllFilesFrontMatter } from "../lib/mdx";
 import { useState } from "react";
 import Head from "next/head";
@@ -28,29 +28,26 @@ export default function Home({ stories }) {
           <div className="xl:max-w-xl">
             <img
               className="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover object-center lg:hidden"
-              src="/images/olymp.jpg"
-              alt="Residence on mountain Olymp"
+              src="/images/hero-image.jpg"
+              alt="Digital Playground image by Maxim Hopman, Unsplash"
             />
-            <h1 className="mt-6 text-2xl font-bold text-gray-900 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
-              The twelve Olympians...
+            <h1 className="mt-6 text-2xl font-semibold text-gray-700 sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
+              Playground of stories and
               <br className="hidden lg:inline" />{" "}
-              <span className="text-blue-700">
-                Residence on mountain Olymp.
-              </span>
+              <span className="text-red-700">serverless technologies</span>
             </h1>
             <p className="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
-              In ancient hellenic mythology, the twelve Olympians are the major
-              protagonists of the Hellenic pantheon, commonly considered to be
-              Zeus, Hera, Poseidon, Demeter, Athena, Apollo, Artemis, Ares,
-              Hephaestus, Aphrodite, Hermes, Hestia and Dionysus.
+              Hi. This is a digital playground. Writing online stories, mostly
+              about web development, software architecture and serverless
+              technologies
             </p>
           </div>
         </div>
         <div className="hidden relative lg:block 2xl:col-span-3">
           <img
             className="absolute inset-0 w-full h-full object-cover object-center"
-            src="/images/olymp.jpg"
-            alt="Residence on mountain Olymp"
+            src="/images/hero-image.jpg"
+            alt="Digital Playground image by Maxim Hopman, Unsplash"
           />
         </div>
       </div>
@@ -60,7 +57,7 @@ export default function Home({ stories }) {
           Discover
         </h1>
         <p className="text-gray-600 mb-4">
-          {`Stories about olympians.
+          {`
           Use the search below to filter by title`}
         </p>
         <div className="relative w-full mb-4">
@@ -89,30 +86,23 @@ export default function Home({ stories }) {
         {!searchValue && (
           <>
             <h2 className="text-2xl font-semibold text-gray-900">
-              Popular olympians
+              Popular stories
             </h2>
 
             <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
-              <OlympianCard
-                title="Zeus"
-                summary="Olympian of the sky, lightning, thunder, law, order and justice"
-                cover="/images/zeus.jpg"
-                symbol="Thunderbolt, eagle"
-                slug="zeus"
+              <StoryCard
+                title="Digital Writing"
+                summary="Concept of digital writing and story-telling in year of 2021"
+                tags="Concept, digital writing"
+                cover="/images/dot-concept.jpg"
+                slug="digital-writing"
               />
-              <OlympianCard
-                title="Athena"
-                summary="Olympian of wisdom, handicraft and warfare"
-                cover="/images/athena.jpg"
-                symbol="Owl, olive tree"
-                slug="athena"
-              />
-              <OlympianCard
-                title="Poseidon"
-                summary="Olympian of the seas, water, storms, hurricanes, earthquakes and horses"
-                cover="/images/poseidon.jpg"
-                symbol="horse, trident"
-                slug="poseidon"
+              <StoryCard
+                title="Scrollytelling"
+                summary="Playground of a story with scrollytelling, written in MDX and react components"
+                cover="/images/scrollytelling.jpg"
+                tags="scroll, tell"
+                slug="example"
               />
             </div>
           </>
@@ -126,7 +116,7 @@ export default function Home({ stories }) {
         )}
         <div className="mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           {filteredStories.map((frontMatter) => (
-            <OlympianCard key={frontMatter.title} {...frontMatter} />
+            <StoryCard key={frontMatter.title} {...frontMatter} />
           ))}
         </div>
       </div>
