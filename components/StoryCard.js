@@ -3,12 +3,10 @@ import format from "comma-number";
 import { API, Auth } from "aws-amplify";
 import { useEffect, useState } from "react";
 
-const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
+const StoryCard = ({ title, summary, cover, tags, slug }) => {
   const [views, setViews] = useState();
 
-
   useEffect(() => {
-
     fetchViews();
   }, []);
 
@@ -18,7 +16,6 @@ const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
         headers: { "x-api-key": process.env.NEXT_PUBLIC_X_API_KEY },
       });
       setViews(views);
-  
     } catch (error) {
       console.log(error);
     }
@@ -35,11 +32,11 @@ const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
         <div className="flex items-center bg-white shadow-lg overflow-hidden">
           <div className="px-6 py-4">
             <div className="flex items-baseline">
-              <span className="bg-blue-200 text-blue-700 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">
-                Symbol
+              <span className="bg-red-200 text-gray-700 text-xs px-2 inline-block rounded-full uppercase font-semibold tracking-wide">
+                Tags
               </span>
               <div className="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
-                {symbol}
+                {tags}
               </div>
             </div>
             <h4 className="mt-3 text-lg font-semibold text-gray-800 leading-tight truncate">
@@ -50,7 +47,7 @@ const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
             </div>
 
             <div className="mt-4">
-              <p className="text-blue-700 font-semibold text-lg">
+              <p className="text-red-700 font-semibold text-lg">
                 Views {`${views ? format(views) : "***"}`}
               </p>
             </div>
@@ -61,4 +58,4 @@ const OlympianCard = ({ title, summary, cover, symbol, slug }) => {
   );
 };
 
-export default OlympianCard;
+export default StoryCard;
