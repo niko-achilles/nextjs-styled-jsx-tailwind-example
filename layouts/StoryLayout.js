@@ -12,7 +12,7 @@ export default function StoryLayout({ children, frontMatter }) {
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
-      <article className="flex flex-col justify-center items-start max-w-5xl mx-auto mb-16  w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16  w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-gray-900">
           {frontMatter.title}
         </h1>
